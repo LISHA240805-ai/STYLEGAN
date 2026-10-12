@@ -67,7 +67,6 @@ pip install tensorflow numpy matplotlib
 jupyter notebook StyleGAN.ipynb
 ```
 
-Run all cells in order. A GPU is recommended but not required, since the model is small and the dataset is a 20k-image subset.
 
 ## Notebook Structure
 
