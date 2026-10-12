@@ -1,4 +1,4 @@
-# StyleGAN on CIFAR-10 (TensorFlow / Keras)
+# StyleGAN on CIFAR-10
 
 ## Introduction
 
@@ -14,7 +14,7 @@ This project is a compact, educational implementation of a **StyleGAN-style Gene
 - **Discriminator:** A convolutional network with 4 strided-conv blocks (32, 64, 128, 128 filters) and a dense output head.
 - **Non-saturating logistic GAN loss** (softplus), trained with Adam (lr = 2e-4, β₁ = 0.0, β₂ = 0.99).
 
-**What the notebook does:**
+## Procedure used
 
 1. Loads and preprocesses CIFAR-10 images (scaled to [-1, 1]).
 2. Builds the Style Generator and Discriminator.
@@ -90,11 +90,4 @@ Run all cells in order. A GPU is recommended but not required, since the model i
 
 > **Note:** With only 10 epochs on 20,000 images, outputs are blurry and abstract. Increase `EPOCHS` and `TRAIN_LIMIT` for better quality.
 
-## Reproducibility
 
-A fixed seed (`SEED = 42`) is set for Python, NumPy, and TensorFlow, and a fixed latent batch (`fixed_z`) is used for consistent sample visualization.
-
-## References
-
-- Karras, T., Laine, S., Aila, T. *A Style-Based Generator Architecture for Generative Adversarial Networks* (StyleGAN), CVPR 2019.
-- Krizhevsky, A. *Learning Multiple Layers of Features from Tiny Images* (CIFAR-10), 2009.
