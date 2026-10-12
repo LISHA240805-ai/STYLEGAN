@@ -88,6 +88,3 @@ Run all cells in order. A GPU is recommended but not required, since the model i
 - Style-mixing outputs (mix at layers 2, 4, 6)
 - A 9-step latent interpolation between two random latent vectors
 
-> **Note:** With only 10 epochs on 20,000 images, outputs are blurry and abstract. Increase `EPOCHS` and `TRAIN_LIMIT` for better quality.
-
-
